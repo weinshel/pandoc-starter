@@ -32,7 +32,7 @@ PANDOC_FLAGS =\
 
 LATEX_FLAGS = \
 
-PDF_ENGINE = pdflatex
+PDF_ENGINE = xelatex
 PANDOCVERSIONGTEQ2 := $(shell expr `pandoc --version | grep ^pandoc | sed 's/^.* //g' | cut -f1 -d.` \>= 2)
 ifeq "$(PANDOCVERSIONGTEQ2)" "1"
     LATEX_FLAGS += --pdf-engine=$(PDF_ENGINE)
@@ -43,12 +43,12 @@ endif
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
 # Generalized rule: how to build a .pdf from each .md
-%.pdf: %.md template.tex
-	pandoc $(PANDOC_FLAGS) $(LATEX_FLAGS) -o $@ $<
+%.pdf: %.md template.tex default.yml
+	pandoc $(PANDOC_FLAGS) $(LATEX_FLAGS) -o $@ $< default.yml
 
 # Generalized rule: how to build a .tex from each .md
-%.tex: %.md template.tex
-	pandoc --standalone $(PANDOC_FLAGS) -o $@ $<
+%.tex: %.md template.tex default.yml
+	pandoc --standalone $(PANDOC_FLAGS) -o $@ $< default.yml 
 
 touch:
 	touch *.md

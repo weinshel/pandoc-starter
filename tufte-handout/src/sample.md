@@ -1,18 +1,7 @@
 ---
-documentclass: tufte-handout
 title: Sample Handout
-author: Jake Zimmerman
+author: Ben Weinshel
 date: \today
-fontsize: 12pt
-# Comment or change these if you don't have these fonts installed
-mainfont: Palatino
-monofont: Menlo
-newtxmathoptions:
-- cmintegrals
-- cmbraces
-colorlinks: true
-linkcolor: RoyalBlue
-urlcolor: RoyalBlue
 ---
 
 # Tote Bag Iceland
