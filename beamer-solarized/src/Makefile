@@ -42,12 +42,12 @@ endif
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
 # Generalized rule: how to build a .pdf from each .md
-%.pdf: %.md pandoc-solarized.sty beamer-includes.tex
-	pandoc $(PANDOC_FLAGS) $(LATEX_FLAGS) -o $@ $<
+%.pdf: %.md pandoc-solarized.sty beamer-includes.tex default.yml
+	pandoc $(PANDOC_FLAGS) $(LATEX_FLAGS) -o $@ $< default.yml
 
 # Generalized rule: how to build a .tex from each .md
-%.tex: %.md pandoc-solarized.sty beamer-includes.tex
-	pandoc --standalone $(PANDOC_FLAGS) -o $@ $<
+%.tex: %.md pandoc-solarized.sty beamer-includes.tex default.yml
+	pandoc --standalone $(PANDOC_FLAGS) -o $@ $< default.yml
 
 touch:
 	touch *.md

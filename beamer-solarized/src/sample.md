@@ -2,12 +2,6 @@
 title: My Title
 author: Jake Zimmerman
 date: \today
-fontsize: 12pt
-monofont: Menlo
-mainfont: Avenir
-header-includes:
-- \usepackage{pandoc-solarized}
-- \input{beamer-includes}
 ---
 
 # Section Title

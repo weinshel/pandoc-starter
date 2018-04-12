@@ -1,0 +1,11 @@
+---
+title: My Title
+author: Ben Weinshel
+date: \today
+fontsize: 12pt
+monofont: Menlo
+mainfont: Avenir
+header-includes:
+- \usepackage{pandoc-solarized}
+- \input{beamer-includes}
+---
