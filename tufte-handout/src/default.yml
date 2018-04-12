@@ -5,8 +5,11 @@ author: Ben Weinshel
 date: \today
 fontsize: 12pt
 # Comment or change these if you don't have these fonts installed
-mainfont: Palatino
-monofont: Menlo
+# mainfont: Palatino # xelatex
+# monofont: Menlo # xelatex
+fontfamily: mathpazo # palatino for pdflatex
+fontfamilyoptions:
+- sc
 newtxmathoptions:
 - cmintegrals
 - cmbraces

@@ -35,6 +35,8 @@ for more information.
 
 [Makefile]: src/Makefile
 
+Note that we need to use `pdflatex` and not xelatex: see the issue [here](https://github.com/jez/pandoc-starter/pull/5).
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://jez.io/MIT-LICENSE.txt)
