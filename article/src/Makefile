@@ -23,6 +23,7 @@
 # ============================================================================
 
 TARGET=sample
+DEFAULTS=default.yml
 
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
@@ -44,11 +45,11 @@ all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
 # Generalized rule: how to build a .pdf from each .md
 %.pdf: %.md header.tex default.yml
-	pandoc $(PANDOC_FLAGS) -H header.tex $(LATEX_FLAGS) -o $@ $< default.yml
+	pandoc $(PANDOC_FLAGS) -H header.tex $(LATEX_FLAGS) -o $@ $< $(DEFAULTS)
 
 # Generalized rule: how to build a .tex from each .md
 %.tex: %.md header.tex default.yml
-	pandoc --standalone $(PANDOC_FLAGS) -H header.tex -o $@ $< default.yml
+	pandoc --standalone $(PANDOC_FLAGS) -H header.tex -o $@ $< $(DEFAULTS)
 
 touch:
 	touch *.md
