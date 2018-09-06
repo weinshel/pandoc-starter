@@ -6,11 +6,12 @@ date: \today
 
 # Tote Bag Iceland
 
-Tote bag iceland authentic, distillery church-key hexagon +1 gluten-free venmo
-small batch biodiesel fingerstache artisan lyft. Lumbersexual leggings wolf
-cardigan kitsch. Photo booth kitsch intelligentsia, meditation neutra heirloom
-hexagon asymmetrical man braid man bun williamsburg occupy disrupt irony. Pork
-belly pok pok iceland four loko pickled vice, glossier af wolf raclette. Offal
+Tote bag iceland authentic [@whitten1999johnny], distillery key hexagon +1 venmo
+small batch biodiesel fingerstache artisan lyft [@thompson1984reflections 27].
+Photo booth kitsch intelligentsia, meditation neutra heirloom
+hexagon asymmetrical man braid man bun williamsburg occupy disrupt irony.
+
+Pork belly pok pok iceland four loko pickled vice, glossier af raclette. Offal
 mumblecore fashion axe kogi af. Street art freegan before they sold out
 lumbersexual, hammock cronut paleo jean shorts pabst next level raclette
 chicharrones disrupt gochujang mlkshk.
@@ -36,3 +37,10 @@ scenester, neutra stumptown chambray literally trust fund hoodie. Food truck
 aesthetic lumbersexual tbh. Prism selvage kickstarter, disrupt mustache
 live-edge vexillologist vinyl. Meggings chia listicle vice, put a bird on it
 shoreditch chambray PBR&B poke meh. Chillwave artisan austin sriracha.
+
+\clearpage
+
+# References
+
+<!-- references are automatically inserted at the end -->
+

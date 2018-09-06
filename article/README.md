@@ -9,12 +9,19 @@ There are a number of build dependencies for these starter files:
 
 - [Pandoc], a universal document converter
 - [LaTeX], a document preparation system
+- `pandoc citeproc`, which connects bibliographies with Pandoc
 
-[Pandoc]: http://pandoc.org/
+[Pandoc]: https://pandoc.org/
 [LaTeX]: https://www.latex-project.org/
 
 Installation instructions vary depending on your system. See the linked websites
 for more information.
+
+On Macs, you can use [Homebrew](https://brew.sh) to install `pandoc` and `pandoc-citeproc`:
+
+```
+$ brew install pandoc pandoc-citeproc
+```
 
 ## Usage
 

@@ -30,6 +30,7 @@ all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 PANDOC_FLAGS =\
 	-f markdown+tex_math_single_backslash \
 	-t latex \
+	--filter pandoc-citeproc \
 
 LATEX_FLAGS = \
 
@@ -51,11 +52,13 @@ all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 %.tex: %.md header.tex default.yml
 	pandoc --standalone $(PANDOC_FLAGS) -H header.tex -o $@ $< $(DEFAULTS)
 
+# sets modification date on file to current time
 touch:
 	touch *.md
 
 again: touch all
 
+# deletes temp tex files
 clean:
 	rm -f *.aux *.log *.nav *.out *.snm *.toc *.vrb || true
 

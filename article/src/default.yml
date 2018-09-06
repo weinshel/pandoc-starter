@@ -1,6 +1,7 @@
 ---
+bibliography: bibliography.bib
 geometry: margin=1.5in
-numbersections: true
+numbersections: false
 secnumdepth: 1
 indent: false
 ---
